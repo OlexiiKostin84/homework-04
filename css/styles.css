@@ -21,7 +21,7 @@
   --socials-link-backgroubd-color: #4d5ae5;
   --socials-link-color: #f4f4fd;
   --customers-link-border-color: #8e8f99;
-  --customers-link-color: #404bbf;
+  --customers-link-color: #8e8f99;
   --customers-link-hover-focus-border-color: #404bbf;
   --customers-icon-fill: #8e8f99;
   --title-color: #2e2f42;
@@ -74,6 +74,8 @@ img {
 
 .header {
   border-bottom: 1px solid var(--border-bottom-color);
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -220,6 +222,9 @@ img {
 
 .advantages-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
 }
 
 .advantages-list {
@@ -310,7 +315,7 @@ img {
 }
 
 .team-cards-wraper {
-  padding: 32px 16px;
+padding: 32px 0
 }
 
 .team-cards-text {
@@ -329,6 +334,8 @@ img {
   display: flex;
   width: 40px;
   height: 40px;
+  align-items: center;
+  justify-content: center;
   padding: 12px;
   border: transparent;
   border-radius: 50%;
@@ -337,7 +344,7 @@ img {
 }
 
 .socials-link:hover {
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 .socials-icon {
@@ -355,6 +362,10 @@ img {
 }
 
 .customers-title {
+  
+  font-size: 36px;
+  line-height: 1.1;
+  color: #2e2f42;
   margin-bottom: 72px;
 }
 
@@ -374,8 +385,10 @@ img {
 
 .customers-link {
   display: flex;
-  width: inherit 100%;
-  height: inherit 100%;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
   padding: 16px 32px;
   border: 1px solid;
   border-color: var(--customers-link-border-color);
@@ -394,9 +407,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 104px;
-  height: 56px;
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
 .production-section {
@@ -448,6 +459,9 @@ img {
   background-color: #404bbf;
   color: #ffffff;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);;
 }
 
 .title {
@@ -502,7 +516,8 @@ img {
 .production-cards-link:hover,
 .production-cards-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .production-cards-image {
@@ -525,6 +540,7 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo-text {
@@ -570,13 +586,19 @@ img {
   flex-direction: column;
 }
 
-.footer-socials-title {
+.footer-socials-text {
+  font-weight: 500;
+  font-style: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
   color: #ffffff;
 }
 
 .footer-socials-link {
   display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   padding: 12px;
@@ -586,8 +608,9 @@ img {
   color: #f4f4fd;
 }
 
-.footer-socials-link:hover {
-  background: #31d0aa;
+.footer-socials-link:hover,
+ .footer-socials-link:focus {
+  background-color: #31d0aa;
 }
 
 .footer-socials-icons {
