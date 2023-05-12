@@ -72,9 +72,9 @@ img {
   margin: 0 auto;
 }
 
-.header {
+.header-class {
   border-bottom: 1px solid var(--border-bottom-color);
-  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -250,11 +250,14 @@ img {
 
 .advantages-icon-wraper {
   display: flex;
-  background: var(--advantages-icon-wraper-color);
+  align-items: center;
+  justify-content: center;
   width: 264px;
   height: 112px;
   padding: 24px 100px;
+  margin-bottom: 8px;
   border-radius: 4px;
+  background: var(--advantages-icon-wraper-color);
 }
 
 .examples-section {
@@ -343,7 +346,8 @@ padding: 32px 0
   color: var(--socials-link-color);
 }
 
-.socials-link:hover {
+.socials-link:hover,
+.footer-socials-link:focus {
   background-color: #404bbf;
 }
 
@@ -397,10 +401,10 @@ padding: 32px 0
 }
 
 .customers-link:hover,
-.customers-link:focus,
-.customers-icon:hover {
+.customers-link:focus {
   fill: currentColor;
   border-color: #404bbf;
+  color: #404bbf;
 }
 
 .customers-icon {
